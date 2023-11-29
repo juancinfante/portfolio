@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600&family=Rubik:wght@300&family=Space+Grotesk:wght@300;400;500;600&display=swap');
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: Rubik;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.header{
+  display: flex;
+  font-weight: bold;
+}
+.header img{
+  width: 50px;
+  border-radius: 50%;
+  transition: transform 1s ease-in-out;
+  margin-right: 10px;
+}
+.header img:hover{
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.info{
+  font-size: 20px;
+  line-height: 28px;
+}
+.links{
+  margin-bottom: 70px;
+}
+.links a{
+  margin-right: 10px;
+  text-decoration: underline rgba(128, 128, 128, 0.635);
+  font-weight: 600;
+  color: #000;
+}
+.links a:nth-child(3){
+  margin-left: 10px;
+}
+.links a:hover{
+  background-color: rgba(128, 128, 128, 0.157);
+  transition: .4s;  
+}
+
+.proyectos{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.proyecto{
+  width: 45%;
+  padding: 10px;
+}
+.proyecto h3 span{
+  color: gray;
+  font-size: 15px;
+}
+/* .proyecto:hover{
+  background-color: red;
+  transition: .4s;  
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.501);
+  border-radius: 10px;
+} */
+.proyecto img{
+  width: 100%;
+  border-radius: 10px;
+}
+.iconos{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icono{
+  text-decoration: underline rgba(61, 61, 61, 0.661);
+  font-weight: 500;
+}
+.icono p{
+  margin: 0;
+}
+.links2{
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+.links2-inner{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.links2-inner img{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
