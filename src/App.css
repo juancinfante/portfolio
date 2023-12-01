@@ -1,19 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600&family=Rubik:wght@300&family=Space+Grotesk:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@300;400;500&family=Merienda:wght@400;500;600&family=Rubik:wght@300&family=Space+Grotesk:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
+*{
+ margin: 0 ; 
+ box-sizing: border-box;
+}
+
+[data-theme="dark"] {
+  background-color: #1F2937;
+  --foreground-color: #567aff;
+  --primary-text-color: #f6f6f6;
+  --secondary-text-color: #0a0a0a;
+  --toggle-bg: #283452;
+  --toggle-fg: #00a6ff;
+  color: #fff !important;
+}
 .container{
-  width: 700px;
+  width: 800px;
   margin: 0 auto;
-  margin-top: 50px;
-  font-family: Rubik;
+  font-family: Lexend Exa;
 }
 a{
   text-decoration: none;
-  color: #000;
+  color: #808080;
+}
+[data-theme= "color-withe"]{
+  color: #fff !important;
 }
 
 .header{
   display: flex;
-  font-weight: bold;
+  padding-top: 20px;
+}
+.perfil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
 .header img{
   width: 50px;
@@ -29,6 +53,9 @@ a{
 .info{
   font-size: 20px;
   line-height: 28px;
+}
+.info p{
+  margin-bottom: 20px;
 }
 .links{
   margin-bottom: 70px;
@@ -47,14 +74,22 @@ a{
   transition: .4s;  
 }
 
+.titulo{
+  margin: 20px 0;
+}
+
 .proyectos{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .proyecto{
-  width: 45%;
-  padding: 10px;
+  width: 49%;
+  margin-bottom: 40px;
+}
+.proyecto h3{
+  margin: 13px 0;
 }
 .proyecto h3 span{
   color: gray;
@@ -78,17 +113,14 @@ a{
   justify-content: space-between;
 }
 
-.icono{
-  text-decoration: underline rgba(61, 61, 61, 0.661);
-  font-weight: 500;
-}
-.icono p{
-  margin: 0;
+.icono img{
+  width: 30px;
+  height: 30px;
+  margin: 10px 0;
 }
 .links2{
   display: flex;
   width: 100%;
-  margin-top: 10px;
 }
 .links2-inner{
   width: 100%;
@@ -102,10 +134,133 @@ a{
   margin-right: 5px;
 }
 
+.formulario{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.formulario label{
+  margin-bottom: 5px;
+}
+.formulario input{
+  margin-bottom: 20px;
+  height: 30px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+[data-theme="input-dark"]{
+  background-color: #2a3441 !important;
+  color: #fff !important;
+}
+.formulario textarea{
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+.formulario button{
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+}
+[data-theme="btn-dark"]{
+  background-color: #2a3441 !important;
+  color: #fff !important;
+}
+.formulario button:hover{
+  cursor: pointer;
+  border: 1px solid;
+}
 
 
 
+/*  TOGGLE */
+.toggle-container {
+  position: absolute;
+  top: 2em;
+  right: 20em;
+}
 
+.toggle {
+  visibility: hidden;
+}
 
+.toggle + label {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+}
 
+.toggle + label::before {
+  content: "";
+  height: 1em;
+  width: 2em;
+  border-radius: 1em;
+  background-color: var(--toggle-bg);
+  margin-right: 0.5em;
+  transition: background-color 250ms ease-in-out;
+  color: #1F2937 !important;
+
+}
+
+.toggle + label::after {
+  content: "";
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 1em;
+  background-color: var(--toggle-fg);
+  position: absolute;
+  left: 0.2em;
+  transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+  color: #1F2937 !important;
+
+}
+
+.toggle:checked + label::after {
+  transform: translateX(100%);
+  color: #1F2937 !important;
+}
+.daynight-img img{
+  width: 25px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .container{
+    width: 100%;
+    padding: 20px;
+  }
+  .toggle-container {
+    top: 2em;
+    right: 0em;
+  }
+  .proyecto{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .perfil{
+    font-size: 12px;
+  }
+  }
 
