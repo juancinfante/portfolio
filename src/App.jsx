@@ -19,6 +19,7 @@ import css from './assets/css.png';
 import javascript from './assets/javascript.png';
 import link from './assets/link.png';
 import terraviva from './assets/terraviva.png';
+import terravivaback from './assets/terraviva-back.png';
 import day from './assets/day.png';
 import night from './assets/night.png';
 import Card from './components/Card';
@@ -63,8 +64,18 @@ function App() {
 
 
           <Card
+          portada={terravivaback}
+          titulo="Terraviva API"
+          año="2024"
+          descripcion="Web de noticias"
+          images={[react,node,mongodb,express,jwt]}
+          logos={[github, link]}
+          nets={["Github", "Live"]}
+          links={["https://github.com/juancinfante/terraviva-api","https://terraviva-admin.vercel.app"]}
+          />
+          <Card
           portada={terraviva}
-          titulo="Terraviva"
+          titulo="Terraviva FRONT"
           año="2024"
           descripcion="Web de noticias."
           images={[react,node,mongodb,express,jwt]}
