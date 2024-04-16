@@ -14,9 +14,11 @@ import node from './assets/node.png';
 import jwt from './assets/jwt2.png';
 import html5 from './assets/html5.png';
 import bs5 from './assets/bootstrap.png';
+import vyom from './assets/vyom.png';
 import css from './assets/css.png';
 import javascript from './assets/javascript.png';
 import link from './assets/link.png';
+import terraviva from './assets/terraviva.png';
 import day from './assets/day.png';
 import night from './assets/night.png';
 import Card from './components/Card';
@@ -60,6 +62,26 @@ function App() {
         <div className="proyectos">
 
 
+          <Card
+          portada={terraviva}
+          titulo="Terraviva"
+          año="2024"
+          descripcion="Web de noticias."
+          images={[react,node,mongodb,express,jwt]}
+          logos={[github, link]}
+          nets={["Github", "Live"]}
+          links={["https://github.com/juancinfante/terraviva-front","https://terrraviva.netlify.app/"]}
+          />
+          <Card
+          portada={vyom}
+          titulo="VYOM movement"
+          año="2024"
+          descripcion=""
+          images={[html5,bs5,css,react]}
+          logos={[github, link]}
+          nets={["Github", "Live"]}
+          links={["https://github.com/juancinfante/vyom-movement","https://vyom-movement.vercel.app/"]}
+          />
           <Card
           portada={fastlibery}
           titulo="FastLibery"
@@ -125,7 +147,7 @@ function App() {
           <Form isDark= {isDark} />        
         </div>
         <div className="footer">
-          <p>Desarrollado con ❤️ por <a href="">@juancinfante</a></p>
+          <p>Desarrollado con ❤️ por <a href="https://github.com/juancinfante/" target="_blank" rel="noreferrer">@juancinfante</a></p>
         </div>
       </div>
       </div>
