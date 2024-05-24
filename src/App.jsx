@@ -71,7 +71,7 @@ function App() {
           images={[react,node,mongodb,express,jwt]}
           logos={[github, link]}
           nets={["Github", "Live"]}
-          links={["https://github.com/juancinfante/terraviva-api","https://terraviva-admin.vercel.app"]}
+          links={["https://github.com/juancinfante/terraviva-api","https://terrraviva.vercel.app/admin"]}
           />
           <Card
           portada={terraviva}
@@ -81,7 +81,7 @@ function App() {
           images={[react,node,mongodb,express,jwt]}
           logos={[github, link]}
           nets={["Github", "Live"]}
-          links={["https://github.com/juancinfante/terraviva-front","https://terrraviva.netlify.app/"]}
+          links={["https://github.com/juancinfante/terraviva-front","https://terrraviva.vercel.app/"]}
           />
           <Card
           portada={vyom}
