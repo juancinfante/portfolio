@@ -48,7 +48,7 @@ function App() {
         <h1 className='titulo'>Sobre mi</h1>
         <div className="info">
           <p>
-          Hola! Soy Programador Full Stack</p><p> Apasionado por la creación de aplicaciones web. Tengo experiencia trabajando tanto en el frontend como en el backend, utilizando tecnologías como React, Next.js, Node.js, PHP, MongoDB y MysSQL.
+          Hola! Soy Programador Full Stack</p><p> Apasionado por la creación de aplicaciones web. Tengo experiencia trabajando tanto en el frontend como en el backend, utilizando tecnologías como React, Next.js, Node.js, PHP, MongoDB y MySQL.
           </p>
           <p>
 💡        Siempre estoy buscando oportunidades para aprender y crecer en este apasionante mundo tecnológico. Creo en la mejora continua y en estar al tanto de las últimas tendencias y avances en el desarrollo de software.
@@ -64,24 +64,24 @@ function App() {
 
 
           <Card
+          portada={terraviva}
+          titulo="Terraviva"
+          año="2024"
+          descripcion="Diario digital"
+          images={[react,node,mongodb,express,jwt]}
+          logos={[github, link]}
+          nets={["Github", "Live"]}
+          links={["https://github.com/juancinfante/terraviva-front","https://terraviva.com.ar/"]}
+          />
+          <Card
           portada={terravivaback}
           titulo="Terraviva API"
           año="2024"
-          descripcion="Web de noticias"
+          descripcion="Diario digital"
           images={[react,node,mongodb,express,jwt]}
           logos={[github, link]}
           nets={["Github", "Live"]}
           links={["https://github.com/juancinfante/terraviva-api","https://terrraviva.vercel.app/admin"]}
-          />
-          <Card
-          portada={terraviva}
-          titulo="Terraviva FRONT"
-          año="2024"
-          descripcion="Web de noticias."
-          images={[react,node,mongodb,express,jwt]}
-          logos={[github, link]}
-          nets={["Github", "Live"]}
-          links={["https://github.com/juancinfante/terraviva-front","https://terrraviva.vercel.app/"]}
           />
           <Card
           portada={vyom}
@@ -128,7 +128,7 @@ function App() {
           portada={cuandojuega}
           titulo="Cuando Juega"
           año="2023"
-          descripcion="Web que te muestrar los ultimos 10 partidos de un equipo. Consumiendo api externa."
+          descripcion="Web que te muestrar los ultimos 10 partidos de un equipo. Consumiendo api."
           images={[html5,css,javascript]}
           logos={[github, link]}
           nets={["Github", "Live"]}
@@ -154,13 +154,18 @@ function App() {
           nets={["Github", "Live"]}
           links={["https://github.com/juancinfante/landing_page_mia","https://juancinfante.github.io/landing_page_mia/"]}
           /> 
+      </div>
+          <div className="row">
+            <div className="col-12">
+              
+          </div>
           <h1 className='titulo'>Contacto</h1>
           <Form isDark= {isDark} />        
         </div>
+            </div>
         <div className="footer">
           <p>Desarrollado con ❤️ por <a href="https://github.com/juancinfante/" target="_blank" rel="noreferrer">@juancinfante</a></p>
         </div>
-      </div>
       </div>
     </>
   )
