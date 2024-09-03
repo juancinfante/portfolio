@@ -10,6 +10,8 @@ import github from './assets/github.png';
 import mongodb from './assets/mongodb.png';
 import react from './assets/react.png';
 import express from './assets/express.png';
+import nextjs from './assets/nextjs.png';
+import nextauth from './assets/nextauth.png';
 import node from './assets/node.png';
 import jwt from './assets/jwt2.png';
 import html5 from './assets/html5.png';
@@ -19,6 +21,7 @@ import css from './assets/css.png';
 import javascript from './assets/javascript.png';
 import link from './assets/link.png';
 import terraviva from './assets/terraviva.png';
+import promptopia from './assets/promptopia.jpg';
 import terravivaback from './assets/terraviva-back.png';
 import day from './assets/day.png';
 import night from './assets/night.png';
@@ -63,6 +66,16 @@ function App() {
         <div className="proyectos">
 
 
+          <Card
+          portada={promptopia}
+          titulo="Promptopia"
+          año="2024"
+          descripcion="Blog"
+          images={[nextjs, nextauth, mongodb,jwt]}
+          logos={[github, link]}
+          nets={["Github", "Live"]}
+          links={["https://github.com/juancinfante/nextjs-shareprompts","https://shareprompts-mf1f4lqzh-juancinfantes-projects.vercel.app/"]}
+          />
           <Card
           portada={terraviva}
           titulo="Terraviva"
