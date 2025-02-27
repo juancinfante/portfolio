@@ -23,6 +23,8 @@ import link from './assets/link.png';
 import terraviva from './assets/terraviva.png';
 import promptopia from './assets/promptopia.jpg';
 import terravivaback from './assets/terraviva-back.png';
+import mercadopago from './assets/mercadopago.png';
+import clubcyt from './assets/clubcyt.png';
 import day from './assets/day.png';
 import night from './assets/night.png';
 import Card from './components/Card';
@@ -66,15 +68,16 @@ function App() {
         <div className="proyectos">
 
 
+          
           <Card
-          portada={promptopia}
-          titulo="Promptopia"
-          año="2024"
-          descripcion="Blog"
-          images={[nextjs, nextauth, mongodb,jwt]}
+          portada={clubcyt}
+          titulo="Clubcyt"
+          año="2025"
+          descripcion="Plataforma de membresía"
+          images={[nextjs, nextauth,node,mongodb,express,mercadopago,jwt]}
           logos={[github, link]}
           nets={["Github", "Live"]}
-          links={["https://github.com/juancinfante/nextjs-shareprompts","https://shareprompts-mf1f4lqzh-juancinfantes-projects.vercel.app/"]}
+          links={["https://github.com/juancinfante","https://clubcyt.com/"]}
           />
           <Card
           portada={terraviva}
@@ -105,6 +108,16 @@ function App() {
           logos={[github, link]}
           nets={["Github", "Live"]}
           links={["https://github.com/juancinfante/vyom-movement","https://vyom-movement.vercel.app/"]}
+          />
+          <Card
+          portada={promptopia}
+          titulo="Promptopia"
+          año="2024"
+          descripcion="Blog"
+          images={[nextjs, nextauth, mongodb,jwt]}
+          logos={[github, link]}
+          nets={["Github", "Live"]}
+          links={["https://github.com/juancinfante/nextjs-shareprompts","https://shareprompts-mf1f4lqzh-juancinfantes-projects.vercel.app/"]}
           />
           <Card
           portada={fastlibery}

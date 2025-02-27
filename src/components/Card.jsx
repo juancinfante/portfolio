@@ -4,7 +4,7 @@ const Card = ({portada,titulo, año, descripcion, images, logos,nets, links,isDa
   return (
     <>
         <div className="proyecto">
-            <img src={portada} alt="" />
+            <img src={portada} alt="" style={{height : "250px", width: "100%", objectFit: "cover"}}/>
             <h3>{titulo} <span>{año}</span></h3>
             <p>{descripcion}</p>
             <div className="iconos">
